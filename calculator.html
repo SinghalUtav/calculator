@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section style="text-align: center; margin-top: 20px;">
+    <form action="" style="display: flex;">
+        <div style="border: 2px solid;
+        width: 190px; height: 300px;
+        margin: 20px auto; background-color: gray;">
+       <div>
+        <input style="width: 96% ; height: 30px; border: 2px solid white;" type="text" name="display"><br><br>
+        <button style="border-radius: 50%; font-size: 20px; width: 40px; background-color: blueviolet;" type="button" onclick="display.value = ''">AC</button> 
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '()'">()</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '%'">%</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '/'">/</button></div> 
+        <br>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '7'">7</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '8'">8</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '9'">9</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '*'">x</button>
+        <br><br>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '4'">4</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '5'">5</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '6'">6</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '-'">-</button>
+        <br><br>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '1'">1</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '2'">2</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '3'">3</button>       
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '+'">+</button>
+        <br><br>       
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '0'">0</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value += '.'">.</button>
+        <button style="border-radius: 50%; font-size: 20px;" type="button" onclick="display.value = display.value.slice(0,-1)">C</button>
+        <button style="border-radius: 50%; font-size: 20px; background-color: blueviolet;" type="button" onclick="display.value = eval(display.value)">=</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>
